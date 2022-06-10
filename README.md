@@ -1,2 +1,2 @@
 # bootstrap
-nauka bootstrap'a
+pierwsze kroki w bootstrap :)
