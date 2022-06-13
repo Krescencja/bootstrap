@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flowers CMS</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./JS/javascript.js"></script> 
+</head>
+
+<body>
+
+
+    <div class="panel">
+        <div class="row m-0 h-100">
+            <div class="panel-left col-2 p-0 px-4 text-white text-center">
+                <section class="date-box">
+                    <p class="mb-0 day"> <script LANGUAGE= "JavaScript" type= "text/javascript">
+                        jakiDzien()
+                        </script></p>
+                    <p class="mb-0 time"><script LANGUAGE= "JavaScript" type= "text/javascript">
+                        godzina()
+                        </script></p>
+                    <p class="mb-0 date text-muted"><script LANGUAGE= "JavaScript" type= "text/javascript">
+                        wyswietlDate()
+                       </script></p>
+                </section>
+                <section class="menu">
+                    <a href="index.html" class="active">
+                        <div class="menu-item">
+                            <i class="bi bi-sliders"></i>
+                            <p>strona główna</p>
+                        </div>
+                    </a>
+                    <a href="posts.html">
+                        <div class="menu-item">
+                            <i class="bi bi-chat-dots"></i>
+                            <p>posty</p>
+                        </div>
+                    </a>
+                    <a href="users.html">
+                        <div class="menu-item">
+                            <i class="bi bi-people-fill"></i>
+                            <p>użytkownicy</p>
+                        </div>
+                    </a>
+                </section>
+                <section class="info-box mt-3">
+                    <h3>Flowers CMS</h3>
+                    <p class="text-muted"> &copy; Copyright 2022</p>
+                </section>
+            </div>
+            <div class="panel-right col-10 p-0">
+
+                <div class="row m-0 h-100">
+                    
+                    <div class="col-9 mt-5">
+                        <section class="main py-4 px-5 text-light text-center">
+                            <h1 class="mb-5">Główne statystyki</h1>
+                            <div class="row mb-5">
+                                <div class="col-4">
+                                    <div class="main-item p-5 border">
+                                        <h3>posty</h3>
+                                        <p>Łącznie: 42405204</p>
+                                        <p>W tym miesiącu: 1254324</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="main-item p-5 border">
+                                        <h3>tematy</h3>
+                                        <p>Łącznie: 42405204</p>
+                                        <p>W tym miesiącu: 1254324</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="main-item p-5 border">
+                                        <h3>użytkowników</h3>
+                                        <p>Łącznie: 42405204</p>
+                                        <p>W tym miesiącu: 1254324</p>
+                                    </div>
+                                </div>
+                            </div>
+<div id="chart" class="py-5 text-dark"></div>
+</section>
+<section class="main-table text-white px-5 py-5">
+    <div class="table-header d-flex justify-content-between">
+        <h3 class="fw-bold mb-3">Ostatnie posty</h3>
+        <div class="dropdown">
+            <button class="btn btn-dark dropdown-toggle border" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown">Sortuj</button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                <a class="dropdown-item" href="#"><li>Najnowsze</li></a>
+                <a class="dropdown-item" href="#"><li>Najstarsze</li></a>
+            </ul>
+        </div>
+    </div>
+    <div class="table-main">
+        <table class="table text-white">
+            <thead>
+              <tr>
+                <th scope="col"><h3>#</h3></th>
+                <th scope="col"><h3>temat</h3></th>
+                <th scope="col"><h3>użytkownik</h3></th>
+                <th scope="col"><h3>data</h3></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><p>1</p></th>
+                <td><p>Lorem, ipsum dolor.</p></td>
+                <td><p>Otto</p></td>
+                <td><p>20/20/2022</p></td>
+              </tr>
+              <tr>
+                <th scope="row"><p>2</p></th>
+                <td><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></td>
+                <td><p>Thornton</p></td>
+                <td><p>20/20/2022</p></td>
+              </tr>
+              <tr>
+                <th scope="row"><p>3</p></th>
+                <td><p>Lorem ipsum dolor sit.</p></td>
+                <td><p>Larry the Bird</p></td>
+                <td><p>20/20/2022</p></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <div class="table-pages">
+        <div class="btn-group me-2 text-center" role="group" aria-label="First group">
+            <button type="button" class="btn btn-dark border">&laquo;</button>
+            <button type="button" class="btn btn-dark border">1</button>
+            <button type="button" class="btn btn-dark border">2</button>
+            <button type="button" class="btn btn-dark border">3</button>
+            <button type="button" class="btn btn-dark border">&raquo;</button>
+          </div>
+        
+
+    </div>
+</section>
+
+                </div>
+                    <aside class="col-3 p-4 text-light text-center right-main">
+                        <h1 class="shadow-logo-right-menu display-1 mb-5 mt-5"><i class="bi bi-flower2"></i>Flowers</h1>
+                        <p class="mb-5 pb-5">Powerful tool for professionals & cookie lovers</p>
+                        <h2 class="mb-5">użytkownicy online</h2>
+                        <h1 class="mb-5  pb-5">47</h1>
+                        <h2 class="mb-5">płeć użytkowników</h2>
+                            <div class="d-flex justify-content-evenly mb-5"> 
+                                <div class="mars">  
+                                    <i class="fa-solid fa-mars"></i>
+                                    <p>56%</p>
+                                </div> 
+                                <div class="wenus">
+                                    <i class="fa-solid fa-venus"></i>
+                                    <p>44%</p>
+                                </div>
+                            </div>
+                            <div class="">
+                                <p class="text-uppercase fw-bold right-main-statistics">statystyki</p>
+                                <div class="dropdown">
+                                    <button class="btn btn-dark  border w-100 text-start" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown">Miesiąc</button>
+                                    <ul class="dropdown-menu dropdown-menu-dark w-100" aria-labelledby="dropdownMenuButton2">
+                                        <a class="dropdown-item" href="#"><li>Styczeń</li></a>
+                                        <a class="dropdown-item" href="#"><li>Luty</li></a>
+                                        <a class="dropdown-item" href="#"><li>Marzec</li></a>
+                                        <a class="dropdown-item" href="#"><li>Kwiecień</li></a>
+                                        <a class="dropdown-item" href="#"><li>Maj</li></a>
+                                    </ul>
+                                </div>
+                                <div class="row mt-5 statistics">
+                                    <div class="col-6 mb-5">
+                                        <h3>Posty</h3>
+                                        <p class="text-muted">125 703</p>
+                                    </div>
+                                    <div class="col-6 mb-5">
+                                        <h3>Rejestracje</h3>
+                                        <p class="text-muted">5 703</p>
+                                    </div>
+                                    <div class="col-6 mb-5">
+                                        <h3>Śr. czas - pobyt</h3>
+                                        <p class="text-muted">46min</p>
+                                    </div>
+                                    <div class="col-6 mb-5">
+                                        <h3>Śr. czas - aktywność</h3>
+                                        <p class="text-muted">24min</p>
+                                    </div>
+                                    <div class="col-6 mb-5">
+                                        <h3>Ilość zamówień</h3>
+                                        <p class="text-muted">928</p>
+                                    </div>
+                                    <div class="col-6 mb-5">
+                                        <h3>Ilość reklamacji</h3>
+                                        <p class="text-muted">6</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                </aside>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        <script src="https://kit.fontawesome.com/22352bd915.js" crossorigin="anonymous"></script>
+        <script>
+        var options = {
+            series: [{
+            name: 'Aktywni użytkownicy',
+            data: [31, 40, 28, 51, 42, 109, 100]
+          }, {
+            name: 'Ilość postów',
+            data: [11, 32, 45, 32, 34, 52, 41]
+          }],
+            chart: {
+            height: 350,
+            type: 'area',
+            foreColor: '#fff'
+          },
+          dataLabels: {
+            enabled: false
+          },
+          stroke: {
+            curve: 'smooth'
+          },
+          xaxis: {
+            type: 'datetime',
+            categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+          },
+          tooltip: {
+            x: {
+              format: 'dd/MM/yy HH:mm'
+            },
+          },
+          legend: {
+            show: false
+          }
+          };
+  
+          var chart = new ApexCharts(document.querySelector("#chart"), options);
+          chart.render();
+        </script>
+</body>
+
+</html>
