@@ -31,6 +31,12 @@ body {
 	overflow: hidden;
 }
 
+.info-top h1 {
+	font-size: 4rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
 /* left panel */
 
 .panel-left {
@@ -216,4 +222,69 @@ margin-bottom: 2rem;
 .statistics h4{
 	font-size: 2rem;
 
+}
+
+/* posts */
+
+.posts h3 {
+	font-size: 2.4rem;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.featured-post .btn {
+	font-size: 2rem;
+}
+
+.featured-post .card-title {
+	font-size: 2.5rem;
+}
+
+.featured-post .card-body {
+	font-size: 1.8rem;
+}
+
+.active-users .card-img {
+	overflow: hidden;
+}
+
+.active-users img {
+	height: 180px;
+	object-fit: cover;
+	opacity: .6;
+	transition: opacity .3s, transform .3s;
+}
+
+.active-users img:hover {
+	opacity: 1;
+	transform: scale(1.1);
+}
+.active-users h1 {
+	font-weight: bold;
+	font-size: 3rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.active-users p, .btn {
+	font-size: 1.6rem;
+}
+
+.find-post, .find-post input, .find-post .btn, .find-post .dropdown-item {
+	font-size: 2rem;
+}
+
+/* okienko */
+
+.posts-modal h3 {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.posts-modal p, .posts-modal .btn {
+	font-size: 1.8rem;
+}
+
+.posts-modal .modal-body .btn {
+	text-transform: uppercase;
 }
