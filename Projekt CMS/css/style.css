@@ -274,7 +274,7 @@ margin-bottom: 2rem;
 	font-size: 2rem;
 }
 
-/* okienko */
+/* alert - posts */
 
 .posts-modal h3 {
 	font-size: 2rem;
@@ -287,4 +287,48 @@ margin-bottom: 2rem;
 
 .posts-modal .modal-body .btn {
 	text-transform: uppercase;
+}
+
+/* users */
+
+.users-list li {
+	padding: 0.5em 1em;
+	margin: 0.2em 0;
+	font-size: 2rem;
+}
+
+.users-list .btn {
+	font-size: 1.6rem;
+}
+
+.users-form label{
+	font-size: 2rem;
+}
+
+.users-form input, .users-form select {
+	font-size: 2rem;
+}
+
+.users-form button {
+
+	font-size: 2.5rem;
+	float: right;
+}
+
+/* alert - users */
+
+.users-modal h1 {
+	font-size: 4rem;
+}
+
+.users-modal p, .users-modal label {
+	font-size: 2.5rem;
+}
+
+.users-modal input, .users-modal select {
+	font-size: 2.5rem;
+}
+
+.users-modal button {
+	font-size: 2.5rem;
 }
